@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE-edge">
 <meta name="viewport" content="width=device-width, intial-scale=1.0">
-<title>Personal Website</title>
+<title>Bryan Tjandra</title>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 	<!--style----->
 	<style>
@@ -22,13 +24,18 @@
     <!--navigation------------------------->
 	    <nav>
         <!--logo-->
-        <a href="#" class="logo">G T Internet</a>
+        <!-- <a href="#" class="logo"><img src="your_logo_image_path" alt="Logo"></a>
+        <a href="#" class="logo">bry273</a> -->
+        <div class="logo">
+            <img src="images/bryan.jpeg" alt="Logo" class="logo-image">
+            <a href="#" class="logo-text">bryan273</a>
+        </div>
         <!--menu-->
         <ul>
         <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">Team</a></li>
+        <li><a href="#">Experiences</a></li>
+        <li><a href="#">Achievements</a></li>
+        <li><a href="#">Projects</a></li>
         </ul>
         <!--bars--------------->
         <div class="toggle"></div>
@@ -39,9 +46,11 @@
 		<div class="text-container">
 			<p>Hello,</p>
 		    <p>I&#8217;M BRYAN TJANDRA</p>
-			<p>Freelancing with Designer <br>& Devolper</p>
-			<button class="hire-btn">Hire me</button>
-			<button class="down-cv">Download CV</button>
+			<p>Data Scientist & Analyst <br>Enthusiast</p>
+			<div class="button-container">
+                <a href="mailto:bryantjandra@ristek.cs.ui.ac.id" class="hire-btn">Hire me</a>
+                <a href="https://drive.google.com/uc?export=download&id=1ITvj8k8annTyKnYE9d8bEHmXsFklq6NQ" class="down-cv">Download CV</a>
+            </div>
 		</div>
 	<!--model---------------------->
 	<img alt="model" class="model" src="images/model.png">  
@@ -53,12 +62,26 @@
         <!--about-me-text-->
         <div class="about-text">
         <p>About Me</p>
-        <p>Devolper & Designer</p>
-        <p>Hello,My name is Touseeq Ijaz. I am a Devolper and also a Designer.If you have asany Project or if you want make a software for your bisnes conatact me.I make as soon as possibale.You really like my work,if you don&#8217;t i change this until you like I give you seticfaction result.</p>
-        <p>I am a Devolper and also a Designer.If you have asany Project or if you want make a software for your bussniess conatact me.I make your project as soon as possible.</p>
-        <button>Hire Me</button>
-        <button>Download CV</button>
+        <p>Data Scientist & Analyst</p>
+        <p>Bryan Tjandra is a 3rd-year computer science student with a solid background in Data Analysis & Data Science. With over 2.5 years of hands-on experience, Bryan has utilized various methods to tackle diverse challenges spanning text, images, and tabular data. Notably, Bryan has interned at Xeratic and Hukumonline, and also contributed to improving the Transjakarta bus system. So far, Bryan has won 11 national-scale data competitions, including 8 gold medals. Recognized as the 3rd Most Outstanding Student, Bryan maintains a 3.98 cGPA while leading prominent student organizations like Compfest and RISTEK, demonstrating remarkable leadership prowess.</p>
         </div>
+    </div>
+    <!--skills-container---------------------->
+    <p class="languages-tools-text">Languages and Tools that I've used and learned</p>
+    <div class="skills-container">
+        <img src="https://img.shields.io/badge/-Python-black?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+        <img src="https://img.shields.io/badge/-SQL-black?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQL"/>
+        <img src="https://img.shields.io/badge/-Tableau-black?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau"/>
+        <img src="https://img.shields.io/badge/-Pandas-black?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" /></button>
+        <img src="https://img.shields.io/badge/-Numpy-black?style=for-the-badge&logo=numpy&logoColor=white" alt="Numpy" /></button>
+        <img src="https://img.shields.io/badge/-TensorFlow-black?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" /></button>
+        <img src="https://img.shields.io/badge/-PyTorch-black?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" /></button>
+        <img src="https://img.shields.io/badge/-OpenCV-black?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" /></button>
+        <img src="https://img.shields.io/badge/-Scikit--Learn-black?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" /></button>
+        <img src="https://img.shields.io/badge/-Excel-black?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel" /></button>
+        <img src="https://img.shields.io/badge/-Jupyter-black?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" /></button>
+        <img src="https://img.shields.io/badge/-Google%20Data%20Studio-black?style=for-the-badge&logo=google-analytics&logoColor=white" alt="Google Data Studio" /></button>
+        <img src="https://img.shields.io/badge/Keras-black?style=for-the-badge&logo=keras&logoColor=white" alt="Keras" /></button>
     </div>
 
     <!--services-container---------------------------->
@@ -123,15 +146,17 @@
     <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
 
-    <!--JQUery-------------------->
-    <script type="text/javascript" src="js/JQuery.js"></script>
+    <!--jQuery from CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--Your Custom Script-->
     <script type="text/javascript">
     $(document).ready(function(){
         $('.toggle').click(function(){
-            $('.toggle').toggleClass('active')
-            $('nav').toggleClass('active')
-        })
-    })
+            $('.toggle').toggleClass('active');
+            $('nav').toggleClass('active');
+        });
+    });
     </script>
 
       

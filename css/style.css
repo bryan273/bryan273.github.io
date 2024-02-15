@@ -27,7 +27,6 @@ nav {
 	background-color:#ffffff;
 	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
 	padding:0px 5%;
-	
 }
 nav ul{
 	display: flex;
@@ -40,13 +39,26 @@ nav ul li a{
 	margin:30px;
 	font-family:myriad pro regular;
 	color:#505050;
-	font-size: 15px;
+	font-size: 17px;
 	font-weight:700;
 }
-.logo{
-	font-family:RoadTest;
-	color:#000000;
-	font-size: 22px;
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%; /* Ensures the image is circular */
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-family: "R-flex bold", sans-serif;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
 }
 .active{
 	color:#2d2a2a;
@@ -101,16 +113,38 @@ nav ul li a{
 	top:42%;
 	transform:translate(-13%,-42%);
 }
-.hire-btn{
-	border:2px solid #373636;
-	color:#373636;
-	background-color:transparent;
-	
+.hire-btn, .down-cv {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding to fit your design */
+    border-radius: 15px; /* Optional: for rounded corners */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer; /* Change cursor to signify it's clickable */
+    font-weight: bold; /* Optional: if you want the font to be bold */
+    font-size: 1em; /* Adjust font size as needed */
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    margin-right: 10px;
 }
-.down-cv{
-	background-color:#0B0B0B;
-	color:#fff;	
-	border:none;
+
+.hire-btn {
+    border: 2px solid #373636;
+    color: #373636;
+    background-color: transparent;
+}
+
+.hire-btn:hover {
+    background-color: #373636; /* Dark background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.down-cv {
+    background-color: #0B0B0B;
+    color: #fff;
+    border: 2px solid #0B0B0B;
+}
+
+.down-cv:hover {
+    background-color: #333; /* Slightly lighter black on hover */
 }
 button:active{
 	transform:scale(1.1);
@@ -142,12 +176,12 @@ button:active{
 }
 .about-text p:nth-child(2){
 	color:#3e3d3d;
-	font-size:13px;
+	font-size:18px;
 	font-family: myriad pro;
 	font-weight:bold;
 	line-height:5px;
 }
-.about-text p:nth-child(3),.about-text p:nth-child(4){
+.about-text p:nth-child(3){
 	color:#7e7d7d;
 	font-family:calibri;
 	font-size:16px;
@@ -160,6 +194,38 @@ button:active{
 	border:none;
 	font-family: calibri;
 	background-color:#262525;
+}
+.languages-tools-text{
+	color:#3e3d3d;
+	font-size:20px;
+	font-family: calibri;
+	font-weight:bold;
+	line-height:5px;
+    margin: 3%  auto 20px auto;
+    width:80%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.skills-container {
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Spacing between badges */
+    justify-content: center;
+    margin-top: 20px; /* Spacing above the skill badges */
+    margin: -0%  auto 20px auto;
+}
+
+.skills-container img {
+    height: auto;
+    /* If necessary, you can limit the width of the badges to make them uniform */
+    max-width: 120px; /* Set a max-width for larger badges */
+    transition: transform 0.3s ease;
+}
+
+.skills-container img:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    cursor: pointer;
 }
 .services{
 	height:600px;
@@ -180,9 +246,11 @@ button:active{
 	font-size: 15px;
 	line-height: 5px;
 }
-.services-text p:nth-child(3){font-family:calibri;
-color:#7e7d7d;
-font-size: 15px;}
+.services-text p:nth-child(3){
+    font-family:calibri;
+    color:#7e7d7d;
+    font-size: 15px;
+}
 .services-text{
 	width: 800px;
 	margin:50px 0px;
@@ -528,5 +596,8 @@ footer{
 	footer p:nth-child(2){
 		width: 90%;
 	}
-	
+	.languages-tools-text {
+        font-size: 16px; /* Decrease font size on smaller screens */
+        line-height: 1.4; /* Adjust line height on smaller screens */
+    }
 }
