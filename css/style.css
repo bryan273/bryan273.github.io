@@ -229,18 +229,16 @@ button:active{
 }
 /* Achievements Logo Bronze Silver Gold*/
 .achievements {
-    background-color: #ffffff;
+    background-color: #eae9e9;
     padding-top: 0.1%;
 	padding-bottom: 2%;
 	padding-left: 5%;
 	padding-right: 5%;
     text-align: center;
 }
-.achievements-title p {
-    font-family: calibri;
+.achievements-title h2 {
     font-weight: bold;
     color: #1d1c1c;
-    font-size: 30px;
 }
 .achievement-counters {
     display: flex;
@@ -344,17 +342,116 @@ button:active{
     gap: 10px; /* Space between the icon and text */
 	margin-top: 30px;
 }
-
-/* Hover effect to match the hire-btn */
 .load-more:hover {
     background-color: #373636; /* Background color on hover */
     color: #fff; /* Text color on hover */
 }
-
-/* Font Awesome icon style */
 .load-more i {
     font-size: 24px; /* Icon size to stand out */
 }
+
+/* Experiences */
+.experiences {
+    background-color: #fff;
+    padding: 20px;
+	padding-bottom: 50px;
+}
+
+.experiences h2 {
+    text-align: center;
+}
+
+.experience-buttons {
+    margin-bottom: 20px;
+	display: flex;
+    align-items: center; /* Center cards horizontally */
+    justify-content: center;
+}
+
+.experience-btn {
+    background-color: #eae9e9;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 15px; /* Add right margin for spacing */
+    cursor: pointer;
+    border-radius: 10px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/* Remove right margin from the last button */
+.experience-btn:last-child {
+    margin-right: 0;
+}
+
+.experience-btn.active {
+    background-color: #373636;
+    color: #fff;
+}
+
+.experience-content {
+	display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+    justify-content: center;
+	gap: 30px;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+    width: 50%; /* Adjust width as needed */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Add shadow */
+}
+
+.experience-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px; /* Space for dropdown button */
+}
+
+.experience-logo {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Make the image round */
+    margin-right: 40px;
+	margin-left: 20px;
+}
+
+.experience-details {
+    flex-grow: 1;
+}
+
+.experience-details h3, .experience-details p {
+    margin: 5px 0;
+}
+.multiline-text {
+	white-space: pre-line; /* or white-space: pre-wrap; */
+	gap: 0px;
+}
+.dropdown-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Make the dropdown button full width */
+    padding: 5px 0; /* Add some padding to the button */
+    font-size: 1.5em;
+}
+
+.experience-description {
+    display: none;
+    padding: 0px 0; /* Padding for description content */
+    text-align: left;
+}
+
+/* Add responsive design as needed */
 
 .contact-me{
 	width: 100%;
@@ -470,7 +567,7 @@ footer{
 	font-size:20px;
 	color:#2B2B2B;
 }
-@media(max-width:900px){
+@media(max-width:1177px){
 	*{
 		box-sizing: border-box;
 	}
@@ -488,26 +585,40 @@ footer{
 	.about-container{
 		width:90%;
 		border-radius: 10px;
+		height:430px;
 	}
 	.about-container img{
-		height: 200px;
+		height: 230px;
 	}
 	.about-text{
 		width: 400px;
 	}
 	.about-text p:nth-child(1){
-		font-size: 20px;
+		font-size: 24px;
 	}
 	.about-text p:nth-child(2){
-		font-size: 10px;
+		font-size: 22px;
 	}
 	
 	.about-text p:nth-child(3),
 	.about-text p:nth-child(4){
-		font-size: 14px;
+		font-size: 18px;
 	}
 	.achievement-cards {
         justify-content: center;
+    }
+	.achievements {
+		padding-bottom: 30px;
+	}
+	.achievement-counters {
+		align-items: center;
+	}
+	.card .achievement-title {
+        font-size: 21px; /* Slightly smaller font size for medium screens */
+    }
+    .card .competition-organizer,
+    .card .achievement-description {
+        font-size: 18px; /* Slightly smaller font size for medium screens */
     }
 	.card {
         width: 90%; /* Adjust the percentage as needed */
@@ -607,14 +718,22 @@ footer{
 	}
 	.achievements {
         padding: 2% 5%;
+		padding-bottom: 30px;
     }
-
     .achievement-counters {
         flex-direction: column;
         gap: 15px; /* Space between counters */
     }
 	.achievement-cards {
         flex-direction: column;
+    }
+	.card .achievement-title {
+        font-size: 16px; /* Even smaller font size for small screens */
+    }
+
+    .card .competition-organizer,
+    .card .achievement-description {
+        font-size: 14px; /* Even smaller font size for small screens */
     }
     .card {
         width: 90%; /* Cards take up more screen width */
