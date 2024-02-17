@@ -20,22 +20,20 @@
 </head>
 
 <body>
-    <section>
+    <section id="home-section">
     <!--navigation------------------------->
 	    <nav>
         <!--logo-->
-        <!-- <a href="#" class="logo"><img src="your_logo_image_path" alt="Logo"></a>
-        <a href="#" class="logo">bry273</a> -->
         <div class="logo">
             <img src="images/bryan.jpeg" alt="Logo" class="logo-image">
-            <a href="#" class="logo-text">bryan273</a>
+            <a href="https://bryan273.github.io" class="logo-text">bryan273</a>
         </div>
         <!--menu-->
         <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Experiences</a></li>
-        <li><a href="#">Achievements</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#home-section" class="active">Home</a></li>
+        <li><a href="#experience-section">Experiences</a></li>
+        <li><a href="#achievement-section">Achievements</a></li>
+        <li><a href="#project-section">Projects</a></li>
         </ul>
         <!--bars--------------->
         <div class="toggle"></div>
@@ -85,7 +83,7 @@
     </div>
     
     <!-- Experiences -->
-    <div class="experiences">
+    <div id="experience-section" class="experiences">
         <h2>My <strong>Experiences</strong></h2>
         <div class="experience-buttons">
             <button id="worksBtn" class="experience-btn active">Works</button>
@@ -364,9 +362,8 @@
         </div>
     </div>
 
-    
     <!--achievements-container---------------------------->
-    <div class="achievements">
+    <div  id="achievement-section" class="achievements">
         <!--title-->
         <div class="achievements-title">
             <h2>My <strong>Achievements</strong></h2>
@@ -383,41 +380,77 @@
             <!--1st Achievement Card-->
             <div class="card">
                 <img src="images/Satdat.png" alt="Achievement 1 Image" />
-                <p class="achievement-title"><img src="images/Gold.png"/>1st Winner of Big Data Challenge, Satria Data 2023</p>
-                <p class="competition-organizer">Pusat Prestasi Nasional - August 2023</p>
+                <p class="achievement-title" style="margin-bottom: 0;"><img src="images/Gold.png"/>1st Winner of Big Data Challenge, Satria Data 2023</p>
+                <p class="competition-organizer" style="margin-top: 0;">Pusat Prestasi Nasional - Aug 2023</p>
                 <p class="achievement-description">Achieving the 1st rank by surpassing over 209 teams from 50 universities by developing a system to detect license plates under clear, blurry, and dark images. We also created a Legal Textual Entailment (LTE) system to test the alignment of legal documents. The contribution of this research covers the LTE system and a dataset named LawID</p>
                 <a href="https://tekno.tempo.co/read/1764580/tim-mahasiswa-fasilkom-ui-ciptakan-ai-uji-keselarasan-peraturan-perundangan" target="_blank" class="read-more">Read More</a>
             </div>
             <!--2nd Achievement Card-->
             <div class="card">
                 <img src="images/Joints.png" alt="Achievement 1 Image" />
-                <p class="achievement-title"><img src="images/Gold.png"/>1st Winner of JOINTS Data Competition, JOINTS 2023</p>
-                <p class="competition-organizer">Universitas Gadjah Mada - May 2023</p>
+                <p class="achievement-title" style="margin-bottom: 0;"><img src="images/Gold.png"/>1st Winner of JOINTS Data Competition, JOINTS 2023</p>
+                <p class="competition-organizer" style="margin-top: 0;">Universitas Gadjah Mada - May 2023</p>
                 <p class="achievement-description">Achieved first place by employing a holistic approach to "Developing an Ensemble Model for Earthquake Damage Classification" and "Utilizing CNN Method with Skip Connections for Fire Detection in Images." Outperformed over 230 participants in the competition from 20 national universities.</p>
                 <a href="https://cs.ui.ac.id/2023/05/23/universitas-indonesia-raih-juara-umum-kompetisi-it-bergengsi-jogja-information-technology-session-joints-2023/" target="_blank" class="read-more">Read More</a>
             </div>
             <!--3rd Achievement Card-->
             <div class="card">
                 <img src="images/Arkav.png" alt="Achievement 1 Image" />
-                <p class="achievement-title"><img src="images/Gold.png"/>1st Winner of Datavidia, Arkavidia 8.0</p>
-                <p class="competition-organizer">Institut Teknologi Bandung - February 2023</p>
+                <p class="achievement-title" style="margin-bottom: 0;"><img src="images/Gold.png"/>1st Winner of Datavidia, Arkavidia 8.0</p>
+                <p class="competition-organizer" style="margin-top: 0;">Institut Teknologi Bandung - Feb 2023</p>
                 <p class="achievement-description">Accomplished successful implementation of a cutting-edge rainfall forecasting system and early warning earthquake detection, resulting in outperforming 136 teams. My team developed a system that significantly enhanced the ability to detect seismic activity, providing the vital prediction of magnitude, location, total damage, and tsunami</p>
                 <a href="https://cs.ui.ac.id/2023/03/01/universitas-indonesia-juarai-3-cabang-kompetisi-it-di-ajang-arkavidia-8-0/" target="_blank" class="read-more">Read More</a>
             </div>
         </div>
         <div class="load-more-container">
-            <button class="load-more">
+            <button id="loadMoreButtonAch" class="load-more" >
                 <i class="fas fa-ellipsis-h"></i>
                 <span class="load-more-text">Load More</span>
             </button>
         </div>
     </div>
 
-    <!--if you have any project in your mind contact me-->
-    <div class="contact-me">
-        <p>If You Have Any Project In Your Mind ?</p>
-        <button>Contact me</button>
+    <!--project-container---------------------------->
+    <div  id="project-section" class="projects">
+        <!--title-->
+        <div class="achievements-title">
+            <h2>My <strong>Projects</strong></h2>
+        </div>
+        <!--project cards-->
+        <div class="achievement-cards">
+            <!--1st Project Card-->
+            <div class="card">
+                <img src="images/LTE.png" alt="Project 1 Image" />
+                <p class="achievement-title" style="margin-bottom: 0;">Legislative Document Alignment Test with Legal Textual Entailment</p>
+                <p class="competition-organizer" style="margin-top: 0;">Dec 2023</p>
+                <p class="achievement-description">Introducing an AI-based Legal Textual Entailment system to test and ensure the harmony of legal clauses, aiming to aid policymakers and streamline the legislative process.This innovation led us to be featured in various media coverage and invited to various law firms, startups, state agencies, and ministry.</p>
+                <a href="https://www.canva.com/design/DAF8ZsRuNPM/T87xStkmDP_02SW-m0q0nQ/view?utm_content=DAF8ZsRuNPM&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" class="read-more">Read More</a>
+            </div>
+            <!--2nd Project Card-->
+            <div class="card">
+                <img src="images/Pantau Jalan.png" alt="Project 1 Image" />
+                <p class="achievement-title" style="margin-bottom: 0;">Pantau Jalan: AI-Based System for Prioritizing Road Damage</p>
+                <p class="competition-organizer" style="margin-top: 0;">Oct 2023</p>
+                <p class="achievement-description">Pantau Jalan is an AI-based system for prioritizing road damage through social media reports and app inputs. It features location detection, decision-making on actionability, damage estimation, and priority determination to aid government responses for better road infrastructure in Indonesia.</p>
+                <a href="https://drive.google.com/file/d/1id6wejrXTfgKNhZpwcKv8uhutK6Z2_uw/view?usp=sharing" target="_blank" class="read-more">Read More</a>
+            </div>
+            <!--3rd Project Card-->
+            <div class="card">
+                <img src="images/KRL.png" alt="Project 1 Image" />
+                <p class="achievement-title" style="margin-bottom: 0;">Estimating Passenger Density in Trains through Crowd Counting Modeling</p>
+                <p class="competition-organizer" style="margin-top: 0;">Jul 2023</p>
+                <p class="achievement-description">The KRL Commuter line is popular to use for its comfort and efficiency, but many users are dissatisfied, especially due to unpredictable overcrowding. This research develops a dataset, k-F1 metric, and method that can predict train passenger density through crowd counting.</p>
+                <a href="https://drive.google.com/file/d/1NKC6yK7-upU9ZT1XCCWwk0kmiGTB9rST/view?usp=sharing" target="_blank" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="load-more-container">
+            <button id="loadMoreButtonProj" class="load-more">
+                <i class="fas fa-ellipsis-h"></i>
+                <span class="load-more-text">Load More</span>
+            </button>
+        </div>
     </div>
+
 
     <!--footer--------------->
     <footer>
@@ -458,6 +491,53 @@
             $('.toggle').toggleClass('active');
             $('nav').toggleClass('active');
         });
+
+        // Auto-close sidebar when a link is clicked
+        $('nav ul li a').click(function(){
+            $('.toggle').removeClass('active');
+            $('nav').removeClass('active');
+        });
+
+        // Function to check which section is in the viewport
+        function onScroll() {
+            var scrollPos = $(document).scrollTop();
+            $('nav ul li a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('nav ul li a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                currLink.removeClass("active");
+            }
+            });
+        }
+
+        // Attach the onScroll function to the scroll event
+        $(document).on("scroll", onScroll);
+        
+        // Smooth scrolling to section on click
+        $('nav ul li a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+
+            $('nav ul li a').each(function () {
+            $(this).removeClass('active');
+            })
+
+            $(this).addClass('active');
+
+            var target = this.hash;
+            var menu = target;
+            $target = $(target);
+            $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+            }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+            });
+        });
     });
     </script>
 
@@ -485,6 +565,20 @@
                 document.getElementById('worksBtn').classList.remove('active');
                 this.classList.add('active');
             };
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var loadMoreBtn = document.getElementById('loadMoreButtonAch');
+            loadMoreBtn.addEventListener('click', function() {
+                window.location.href = 'https://bryan273.github.io/achievement';
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var loadMoreBtn = document.getElementById('loadMoreButtonProj');
+            loadMoreBtn.addEventListener('click', function() {
+                window.location.href = 'https://bryan273.github.io/project';
+            });
         });
     </script>
     
