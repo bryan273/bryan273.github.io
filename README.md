@@ -42,7 +42,7 @@
 * house: https://github.com/bryan273/bryan273.github.io/assets/88226713/fc6d5b47-fe0f-4193-964c-33391ae971cf
 * household: https://github.com/bryan273/bryan273.github.io/assets/88226713/a62e56df-0b03-450f-bda7-b2dae369a779
 * inequality_gender: https://github.com/bryan273/bryan273.github.io/assets/88226713/1053b1f0-47a9-4075-9512-76393ad19683
-* KRL: ![KRL](https://github.com/bryan273/bryan273.github.io/assets/88226713/a12e7ae2-dbcb-4639-8871-5a7de743f9ea)
+* KRL: https://github.com/bryan273/bryan273.github.io/assets/88226713/a12e7ae2-dbcb-4639-8871-5a7de743f9ea
 * LTE: https://github.com/bryan273/bryan273.github.io/assets/88226713/df4250e0-5dce-4389-b917-f829012e61e9
 * ocr: https://github.com/bryan273/bryan273.github.io/assets/88226713/fcbe9dfa-ae87-4165-bdbf-21fc68f9b612
 * Pantau Jalan: https://github.com/bryan273/bryan273.github.io/assets/88226713/d5869217-ddec-4719-b74e-07eba4f15ec6
