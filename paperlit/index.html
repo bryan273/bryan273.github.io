@@ -17,14 +17,14 @@
     <meta name="twitter:card" content="summary_large_image" />
     <script>
       // theme before first paint, so a dark-mode visitor never sees a white flash
-      try { var t = localStorage.getItem('pl-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); if (t === 'dark') document.documentElement.classList.add('dark'); } catch (e) {}
+      try { var t = localStorage.getItem('pl-theme') || 'light'; if (t === 'system') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; if (t === 'dark') document.documentElement.classList.add('dark'); } catch (e) {}
       // GitHub Pages sends deep links to 404.html, which stores the path here
       try { var r = sessionStorage.getItem('pl-redirect'); if (r) { sessionStorage.removeItem('pl-redirect'); history.replaceState(null, '', r); } } catch (e) {}
     </script>
-    <script type="module" crossorigin src="/paperlit/assets/index-CLb500Yd.js"></script>
+    <script type="module" crossorigin src="/paperlit/assets/index-CgWXF3Ml.js"></script>
     <link rel="modulepreload" crossorigin href="/paperlit/assets/react-BWic-nxA.js">
     <link rel="modulepreload" crossorigin href="/paperlit/assets/radix-473ko7RT.js">
-    <link rel="stylesheet" crossorigin href="/paperlit/assets/index-BW4o60vq.css">
+    <link rel="stylesheet" crossorigin href="/paperlit/assets/index-SwojreAT.css">
   </head>
   <body>
     <div id="root"></div>
