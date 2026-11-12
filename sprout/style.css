@@ -185,3 +185,5 @@ h3{font-size:16px;color:var(--navy);margin:.2em 0}
 .stage-teen .bubble.big{font-size:20px}
 .stage-teen .said{background:#1d3a3e;color:#dbe5ee}
 .stage-teen .tile small{color:#9fd8dc}.stage-teen .tile.locked small{color:var(--grey)}
+/* phones: the model badge and five header buttons do not fit next to the brand in 390 px */
+@media(max-width:560px){header .badge{display:none}.brand{font-size:16px;gap:6px}.top-r{gap:2px}button.ico{width:34px;height:34px;font-size:17px}}
