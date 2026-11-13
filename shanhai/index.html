@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>山海莫怪 · Blame Not the Beasts</title>
-<meta name="description" content="Shan Hai: Beyond the Ancient Pages. A third-person action game where you bind creatures into the page instead of killing them. 山海莫怪：一支笔，封而不杀。">
+<meta name="description" content="Shan Hai: Beyond the Ancient Pages, by Team 山海莫怪. A third-person action game where you bind creatures into the page instead of killing them. 山海莫怪：一支笔，封而不杀。">
 <meta property="og:title" content="山海莫怪 · Blame Not the Beasts">
 <meta property="og:description" content="A Shan Hai Jing action game: bind the beast into the page, do not kill it. Chapter 1 playable pilot.">
-<meta property="og:image" content="img/title.jpg">
+<meta property="og:image" content="img/hero-bai.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Serif+SC:wght@400;600;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Serif+SC:wght@400;600;900&family=Inter:wght@400;500;600&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#14110f; --ink2:#1d1814; --paper:#eee5d3; --paper2:#cfc3aa; --seal:#c0392b; --gold:#e3b566; --line:rgba(238,229,211,.14);
@@ -26,7 +26,7 @@ a{color:var(--gold)}
 /* top bar */
 header{position:sticky;top:0;z-index:5;background:rgba(20,17,15,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
-.mark{display:flex;align-items:center;gap:10px;font-family:var(--cjk);font-weight:900;font-size:20px;letter-spacing:.08em}
+.mark{font-family:'Ma Shan Zheng','Noto Serif SC',KaiTi,serif!important;font-weight:400!important;font-size:24px!important;display:flex;align-items:center;gap:10px;font-family:var(--cjk);font-weight:900;font-size:20px;letter-spacing:.08em}
 .mark i{display:inline-block;width:22px;height:22px;background:var(--seal);border-radius:4px;box-shadow:0 0 0 2px rgba(0,0,0,.35) inset}
 nav{display:flex;gap:18px;font-size:14px}
 nav a{color:var(--paper2);text-decoration:none}
@@ -37,11 +37,14 @@ nav a:hover{color:var(--gold)}
 .lang button:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
 @media(max-width:700px){nav{display:none}}
 /* hero */
-.hero{position:relative;min-height:78vh;display:grid;align-items:end;background:#000 url(img/title.jpg) center/cover;isolation:isolate}
+.hero{position:relative;min-height:88vh;display:grid;align-items:end;background:#000 url(img/hero-bai.jpg) 38% center/cover;isolation:isolate}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,17,15,0) 30%,rgba(20,17,15,.7) 72%,var(--ink));z-index:-1}
-.hero .wrap{width:100%;padding-bottom:44px;padding-top:44vh}
+.hero .wrap{width:100%;padding-bottom:44px;padding-top:30vh}
 .kicker{font:600 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
-h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+h1{margin:8px 0 0;font:400 clamp(72px,17vw,188px)/1.05 "Ma Shan Zheng","Noto Serif SC",KaiTi,STKaiti,"Kaiti SC",serif;color:#f3e9d2;letter-spacing:.04em;text-shadow:0 3px 24px rgba(0,0,0,.85),0 0 2px rgba(0,0,0,.6)}
+h1 small{display:block;font:600 clamp(13px,2.2vw,20px)/1.2 var(--sans);letter-spacing:.42em;text-transform:uppercase;color:var(--paper);margin-top:6px;text-shadow:0 2px 12px #000}
+.team{margin-top:14px;font:600 14px var(--sans);letter-spacing:.08em;color:var(--gold)}
+.team b{font-family:"Ma Shan Zheng","Noto Serif SC",KaiTi,serif;font-weight:400;font-size:20px;letter-spacing:.06em;color:#f3e9d2}
 .sub{margin-top:10px;text-shadow:0 2px 18px #000;font:italic 500 clamp(22px,3.4vw,34px)/1.2 var(--serif)}
 [data-lang="zh"] .sub{font-style:normal;font-family:var(--cjk);letter-spacing:.12em}
 .lead{max-width:640px;margin-top:20px;color:#e8dfcd;font-size:18px}
@@ -50,7 +53,7 @@ h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .btn.main{background:var(--seal);border-color:var(--seal);color:#fff}
 .btn:hover{filter:brightness(1.15)}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.tags span{font:500 12px var(--sans);padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--paper2);background:rgba(0,0,0,.3)}
+.tags>span{font:500 12px var(--sans);padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--paper2);background:rgba(0,0,0,.3)}
 /* sections */
 section{padding:72px 0;border-top:1px solid var(--line)}
 h2{font:600 clamp(30px,5vw,46px)/1.1 var(--serif);margin-bottom:8px}
@@ -81,18 +84,35 @@ kbd{font:600 13px var(--sans);background:var(--paper);color:var(--ink);padding:2
 ul{padding-left:1.1em}
 footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--paper2);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+.shot{margin-top:26px}
+.shot.big img{aspect-ratio:16/9;object-fit:cover}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+@media(max-width:700px){.grid2{grid-template-columns:1fr}}
+.zoom{cursor:zoom-in}
+.zoom img{transition:transform .35s}
+.zoom:hover img{transform:scale(1.02)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:26px}
+.gal figure img{aspect-ratio:16/10;object-fit:cover}
+.lead2{max-width:720px;margin-top:6px;color:#ddd3bf}
+#lb{position:fixed;inset:0;z-index:20;background:rgba(8,6,5,.94);display:none;align-items:center;justify-content:center;flex-direction:column;padding:16px}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:78vh;border-radius:6px}
+#lb p{margin-top:12px;color:var(--paper);text-align:center;max-width:800px;font-size:15px}
+#lb button{all:unset;cursor:pointer;position:absolute;color:var(--paper);font:400 34px/1 var(--sans);padding:12px 16px}
+#lb .x{top:6px;right:8px}#lb .p{left:2px;top:45%}#lb .n{right:2px;top:45%}
 </style>
 </head>
 <body data-lang="en">
-
 <header>
   <div class="wrap">
     <div class="mark"><i></i>山海莫怪</div>
     <nav>
       <a href="#story"><span lang="en">Story</span><span lang="zh">故事</span></a>
-      <a href="#play"><span lang="en">Gameplay</span><span lang="zh">玩法</span></a>
+      <a href="#bai"><span lang="en">Bai</span><span lang="zh">白</span></a>
+      <a href="#jufu"><span lang="en">Jufu</span><span lang="zh">居茀</span></a>
+      <a href="#gallery"><span lang="en">Gallery</span><span lang="zh">图集</span></a>
       <a href="#controls"><span lang="en">Controls</span><span lang="zh">操作</span></a>
-      <a href="#about"><span lang="en">About</span><span lang="zh">关于</span></a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
       <button id="b-en" aria-pressed="true">EN</button>
@@ -104,14 +124,16 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 <div class="hero">
   <div class="wrap">
     <div class="kicker"><span lang="en">Shan Hai: Beyond the Ancient Pages · Chapter 1</span><span lang="zh">山海：书页之外 · 第一章</span></div>
-    <h1>山海莫怪</h1>
+    <h1 id="title">山海莫怪<small>Blame Not the Beasts</small></h1>
     <div class="sub"><span lang="en">Blame not the beasts.</span><span lang="zh">封而不杀，莫怪山海。</span></div>
     <p class="lead">
       <span lang="en">A third-person action game set in the world of the <i>Classic of Mountains and Seas</i>. You carry a brush that does not kill a creature. It writes it back into its page.</span>
       <span lang="zh">一款取材于《山海经》的第三人称动作游戏。你手中的笔不会杀死怪物，而是把它写回书页之中。</span>
     </p>
+    <div class="team"><span lang="en">A game by </span><span lang="zh">制作：</span><b>Team 山海莫怪</b> <span>(Shan Hai Mo Guai)</span></div>
+    <div class="cta"><a class="btn main" href="#gallery"><span lang="en">See the game</span><span lang="zh">看游戏画面</span></a><a class="btn" href="#story"><span lang="en">Read the story</span><span lang="zh">读故事</span></a></div>
     <div class="tags">
-      <span><span lang="en">Action</span><span lang="zh">动作</span></span><span><span lang="en">Third-person</span><span lang="zh">第三人称</span></span><span><span lang="en">Shan Hai Jing</span><span lang="zh">山海经</span></span><span>PC · Godot 4.7</span><span><span lang="en">Chapter 1 playable pilot</span><span lang="zh">第一章可玩试玩版</span></span>
+      <span><span lang="en">Action</span><span lang="zh">动作</span></span><span><span lang="en">Third-person</span><span lang="zh">第三人称</span></span><span>山海经</span><span>PC · Godot 4.7</span><span><span lang="en">Chapter 1 playable pilot</span><span lang="zh">第一章可玩试玩版</span></span>
     </div>
   </div>
 </div>
@@ -129,38 +151,92 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
            <span lang="zh">申婆婆随后把缚灵笔交给你，让你上山去白的洞穴，那里传来婴儿的哭声。</span></p>
         <div class="quote"><span lang="en">“It does not kill. It writes a creature back into its page.”</span><span lang="zh">“它不杀生，只把生灵写回书页。”</span></div>
       </div>
-      <figure><img src="img/raid.jpg" alt="The night raid countdown in Green Hill village" loading="lazy">
+      <figure class="zoom"><img src="img/raid-countdown.jpg" alt="Night raid countdown in Green Hill village" loading="lazy">
         <figcaption><span lang="en">The Night Raid: ten seconds to get ready.</span><span lang="zh">夜袭：十秒准备时间。</span></figcaption></figure>
+    </div>
+    <div class="grid2">
+      <figure class="zoom"><img src="img/village-dusk.jpg" alt="Green Hill village at dusk" loading="lazy"><figcaption><span lang="en">Green Hill village at dusk, before the horns.</span><span lang="zh">青丘村的黄昏，号角响起之前。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/raid-walkin.jpg" alt="Jufu walking in through the gate" loading="lazy"><figcaption><span lang="en">The Jufu walk in through the north gate.</span><span lang="zh">居茀从北门走了进来。</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="bai">
+  <div class="wrap">
+    <h2><small><span lang="en">The nine-tailed fox</span><span lang="zh">九尾狐</span></small><span lang="en">Bai, three faces</span><span lang="zh">白的三种模样</span></h2>
+    <p class="lead2"><span lang="en">She is not the enemy. Ink has poisoned her. Put out the nine tail flames, one by one, and the white fox underneath comes back.</span><span lang="zh">她不是敌人，是被墨毒染了。逐一熄灭九条尾焰，底下的白狐便会回来。</span></p>
+    <figure class="zoom shot big"><img src="img/bai-ink-side.jpg" alt="Bai the nine-tailed fox, poisoned by ink, violet tail flames" loading="lazy">
+      <figcaption><span lang="en">1. Ink-poisoned: violet flames burn on her tails.</span><span lang="zh">一、中墨之身：紫色尾焰在尾梢燃烧。</span></figcaption></figure>
+    <figure class="zoom shot big"><img src="img/bai-ink-head.jpg" alt="Close-up of Bai with glowing violet eyes" loading="lazy">
+      <figcaption><span lang="en">2. Close-up: the ink makes her eyes glow violet.</span><span lang="zh">二、特写：墨让她的双眼泛出紫光。</span></figcaption></figure>
+    <figure class="zoom shot big"><img src="img/bai-purified.jpg" alt="Bai purified: white fur, white tail flames" loading="lazy">
+      <figcaption><span lang="en">3. Purified: white fur, white flames. Nobody had to die.</span><span lang="zh">三、净化之后：白毛，白焰。无人须死。</span></figcaption></figure>
+    <div class="grid2">
+      <figure class="zoom"><img src="img/bai-tails.jpg" alt="Nine tails seen from behind, one marked" loading="lazy"><figcaption><span lang="en">Nine tails from behind. The gold mark shows the one to hit.</span><span lang="zh">背后的九条尾巴，金色标记指出该打哪一条。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/bai-comic.jpg" alt="Bai in a comic panel" loading="lazy"><figcaption><span lang="en">Her arrival, framed like a page of the book.</span><span lang="zh">她登场的一幕，如书页中的画格。</span></figcaption></figure>
+    </div>
+    <figure class="zoom shot big"><img src="img/den-fight.jpg" alt="The boss fight in Bai's den" loading="lazy">
+      <figcaption><span lang="en">In her den you survive her and put out the flames.</span><span lang="zh">在她的洞穴里，你要撑过她的攻势，熄灭尾焰。</span></figcaption></figure>
+  </div>
+</section>
+
+<section id="jufu">
+  <div class="wrap">
+    <h2><small><span lang="en">The monsters</span><span lang="zh">怪物</span></small><span lang="en">The Jufu</span><span lang="zh">居茀</span></h2>
+    <p class="lead2"><span lang="en">Beasts driven mad by ink. A red “!” over a Jufu means a strike is coming. Step out, then hit back.</span><span lang="zh">被墨染疯的野兽。居茀头顶的红色“！”表示攻击将至，先闪开，再反击。</span></p>
+    <figure class="zoom shot big"><img src="img/jufu-snarl.jpg" alt="Close-up of a Jufu snarling, red-lit face" loading="lazy">
+      <figcaption><span lang="en">The Jufu face: matted fur, red light, a snarl made of ink.</span><span lang="zh">居茀的脸：乱毛、红光，墨凝成的獠牙。</span></figcaption></figure>
+    <figure class="zoom shot big"><img src="img/raid-fight.jpg" alt="The hero fights two Jufu at the gate with the Binding Brush" loading="lazy">
+      <figcaption><span lang="en">Two Jufu at the gate. The gold ring marks where they strike.</span><span lang="zh">城门前的两只居茀，金圈标出攻击落点。</span></figcaption></figure>
+  </div>
+</section>
+
+<section id="hero">
+  <div class="wrap">
+    <h2><small><span lang="en">The hero</span><span lang="zh">主角</span></small><span lang="en">A traveller with a brush</span><span lang="zh">执笔的旅人</span></h2>
+    <div class="two flip">
+      <figure class="zoom"><img src="img/hero.jpg" alt="The hero walking through the village with the brush on his shoulder" loading="lazy"><figcaption><span lang="en">Our traveller, brush on his shoulder, in Green Hill village.</span><span lang="zh">肩扛长笔的旅人，走在青丘村中。</span></figcaption></figure>
+      <div>
+        <p><span lang="en">He arrives with bare hands and a smear of black ink on his fingers. The ink lets every weapon he carries bind a creature instead of killing it.</span>
+           <span lang="zh">他空着双手而来，指尖沾着一抹黑墨。有了这墨，他手中的每件武器都能封印生灵，而不是杀死它们。</span></p>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="play">
   <div class="wrap">
-    <h2><small><span lang="en">Gameplay</span><span lang="zh">玩法</span></small><span lang="en">Fight, then choose</span><span lang="zh">先战斗，再抉择</span></h2>
-    <div class="two flip">
-      <figure><img src="img/fox.jpg" alt="Bai, the nine-tailed fox, in her den" loading="lazy">
-        <figcaption><span lang="en">Bai, the Nine-Tailed Fox (九尾狐), nine tail flames to put out.</span><span lang="zh">九尾狐「白」：要熄灭她的九条尾焰。</span></figcaption></figure>
-      <div>
-        <p><span lang="en">Combat is close and readable. A red “!” tells you a strike is coming. You step out, you hit back. The boss has nine tail flames, and you win by putting them out, not by hurting her.</span>
-           <span lang="zh">战斗贴身而清晰。头顶红色“！”表示攻击将至，你闪开再反击。首领有九条尾焰，要靠熄灭尾焰取胜，而不是伤害她。</span></p>
-        <p><span lang="en">At the end you choose: lower the brush and earn Bai's trust, or bind her into the page.</span>
-           <span lang="zh">结尾由你抉择：放下笔赢得白的信任，或把她封入书页。</span></p>
-      </div>
+    <h2><small><span lang="en">Weapons and bag</span><span lang="zh">武器与背包</span></small><span lang="en">Five ways to hold your ground</span><span lang="zh">五种立足之法</span></h2>
+    <p class="lead2"><span lang="en">Bare hands, hoe, axe, spear and the Binding Brush. Each one has its own swing.</span><span lang="zh">空手、锄头、斧头、长矛与缚灵笔，每种都有自己的挥击。</span></p>
+    <div class="grid2">
+      <figure class="zoom"><img src="img/w-hoe.jpg" alt="Hoe swing" loading="lazy"><figcaption><span lang="en">Hoe: a farmer's tool, the first weapon.</span><span lang="zh">锄头：农具，也是第一件武器。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/w-axe.jpg" alt="Axe swing" loading="lazy"><figcaption><span lang="en">Axe: it chops wood, and sweeps a wide arc.</span><span lang="zh">斧头：能砍柴，挥击范围宽。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/w-spear.jpg" alt="Spear thrust" loading="lazy"><figcaption><span lang="en">Spear: reach, a thrust from afar.</span><span lang="zh">长矛：够得远，隔空突刺。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/w-brush.jpg" alt="Binding Brush swing" loading="lazy"><figcaption><span lang="en">Binding Brush: it writes, it does not kill.</span><span lang="zh">缚灵笔：书写，而不杀戮。</span></figcaption></figure>
     </div>
     <div class="cards">
       <div class="card"><b><span lang="en">Bind, do not kill</span><span lang="zh">封而不杀</span></b><p><span lang="en">The brush seals a creature into the page. Ink on your hands binds with every weapon.</span><span lang="zh">笔能把生灵封入书页，手上的墨让每一件武器都能封印。</span></p></div>
-      <div class="card"><b><span lang="en">Five weapons</span><span lang="zh">五种武器</span></b><p><span lang="en">Bare hands, hoe, axe, spear and the Binding Brush. Each one has its own swing.</span><span lang="zh">空手、锄头、斧头、长矛与缚灵笔，每种都有自己的挥击动作。</span></p></div>
       <div class="card"><b><span lang="en">Calm survival</span><span lang="zh">从容求生</span></b><p><span lang="en">Health comes back by itself. Chew healing leaves, hunt deer, chop wood, rest at a stone stele to save.</span><span lang="zh">生命会自行恢复。可嚼食疗伤草、猎鹿、砍柴，在石碑旁休息存档。</span></p></div>
-      <div class="card"><b><span lang="en">Backpack and hotbar</span><span lang="zh">背包与快捷栏</span></b><p><span lang="en">A grid bag and a 1-9 hotbar. Items stack and show counts.</span><span lang="zh">网格背包加 1-9 快捷栏，物品可堆叠并显示数量。</span></p></div>
+      <div class="card"><b><span lang="en">Two endings</span><span lang="zh">两种结局</span></b><p><span lang="en">Lower the brush and earn Bai's trust, or bind her into the page.</span><span lang="zh">放下笔赢得白的信任，或把她封入书页。</span></p></div>
     </div>
-    <div class="two" style="margin-top:36px">
-      <div>
-        <p><span lang="en">Look at the clues: glowing spots in the hills hold Bai's memories. Read them, and the fight means something different.</span>
-           <span lang="zh">留意线索：山中发光处藏着白的记忆。读过之后，这场战斗的意义就不同了。</span></p>
-      </div>
-      <figure><img src="img/bag.jpg" alt="Backpack grid and hotbar" loading="lazy">
-        <figcaption><span lang="en">Backpack: grid, hotbar, item counts.</span><span lang="zh">背包：网格、快捷栏、物品数量。</span></figcaption></figure>
+    <figure class="zoom shot big"><img src="img/inventory.jpg" alt="Backpack grid and hotbar" loading="lazy">
+      <figcaption><span lang="en">Backpack: a grid bag, a 1-9 hotbar, stacking items with counts.</span><span lang="zh">背包：网格背包、1-9 快捷栏、可堆叠并显示数量的物品。</span></figcaption></figure>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2><small><span lang="en">Gallery</span><span lang="zh">图集</span></small><span lang="en">Tap a picture to enlarge</span><span lang="zh">点击图片放大</span></h2>
+    <div class="gal">
+      <figure class="zoom"><img src="img/title-card.jpg" alt="Title card" loading="lazy"><figcaption><span lang="en">The title card from the intro.</span><span lang="zh">片头标题画面。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/hero-bai.jpg" alt="Bai under the moon" loading="lazy"><figcaption><span lang="en">Bai under the moon.</span><span lang="zh">月下的白。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/jufu-snarl.jpg" alt="Jufu close-up" loading="lazy"><figcaption><span lang="en">Jufu close-up.</span><span lang="zh">居茀特写。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/bai-purified.jpg" alt="Purified Bai" loading="lazy"><figcaption><span lang="en">Bai, purified.</span><span lang="zh">净化后的白。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/raid-fight.jpg" alt="Gate fight" loading="lazy"><figcaption><span lang="en">The fight at the gate.</span><span lang="zh">城门之战。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/bai-ink-head.jpg" alt="Bai close-up" loading="lazy"><figcaption><span lang="en">Violet eyes.</span><span lang="zh">紫色的眼。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/inventory.jpg" alt="Inventory" loading="lazy"><figcaption><span lang="en">Backpack and hotbar.</span><span lang="zh">背包与快捷栏。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/village-dusk.jpg" alt="Village" loading="lazy"><figcaption><span lang="en">Green Hill at dusk.</span><span lang="zh">暮色青丘。</span></figcaption></figure>
+      <figure class="zoom"><img src="img/w-brush.jpg" alt="Brush" loading="lazy"><figcaption><span lang="en">The Binding Brush.</span><span lang="zh">缚灵笔。</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -185,7 +261,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <section id="about">
   <div class="wrap">
-    <h2><small><span lang="en">About</span><span lang="zh">关于</span></small><span lang="en">Team A-7</span><span lang="zh">A-7 小组</span></h2>
+    <h2><small><span lang="en">About</span><span lang="zh">关于</span></small><span lang="en">Team 山海莫怪</span><span lang="zh">山海莫怪 团队</span></h2>
     <p style="max-width:720px"><span lang="en">Chapter 1 is a playable vertical slice: intro, night raid, the Binding Brush, the hill path, a stone stele, Bai's den and the boss fight, with two endings to choose from. The game runs on Godot 4.7 on Windows and is tuned for laptop graphics.</span>
       <span lang="zh">第一章是一个可玩的垂直切片：片头、夜袭、缚灵笔、山路、石碑存档、白的洞穴与首领战，结尾有两种抉择。游戏基于 Godot 4.7，在 Windows 上运行，并针对笔记本显卡做了优化。</span></p>
     <h3 style="font:600 22px var(--serif);margin-top:30px"><span lang="en">Credits</span><span lang="zh">致谢</span></h3>
@@ -201,11 +277,27 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <footer>
   <div class="wrap">
-    <div>山海莫怪 · Blame Not the Beasts · Team A-7</div>
+    <div>山海莫怪 · Blame Not the Beasts · Team 山海莫怪 (Shan Hai Mo Guai)</div>
     <div><span lang="en">Work in progress. Screenshots are from the current build.</span><span lang="zh">开发中，截图来自当前版本。</span></div>
   </div>
 </footer>
 
+<div id="lb" role="dialog" aria-modal="true"><button class="x" aria-label="Close">&times;</button><button class="p" aria-label="Previous">&#8249;</button><img alt=""><p></p><button class="n" aria-label="Next">&#8250;</button></div>
+<script>
+(function(){
+  var figs=[].slice.call(document.querySelectorAll("figure.zoom")),lb=document.getElementById("lb"),im=lb.querySelector("img"),cp=lb.querySelector("p"),i=0;
+  function show(k){i=(k+figs.length)%figs.length;var f=figs[i],l=document.body.getAttribute("data-lang");
+    im.src=f.querySelector("img").src;im.alt=f.querySelector("img").alt;
+    var sp=f.querySelector('figcaption [lang="'+l+'"]');cp.textContent=sp?sp.textContent:"";lb.classList.add("on");document.body.style.overflow="hidden"}
+  function hide(){lb.classList.remove("on");document.body.style.overflow=""}
+  figs.forEach(function(f,k){f.addEventListener("click",function(){show(k)})});
+  lb.querySelector(".x").onclick=hide;
+  lb.querySelector(".p").onclick=function(e){e.stopPropagation();show(i-1)};
+  lb.querySelector(".n").onclick=function(e){e.stopPropagation();show(i+1)};
+  lb.addEventListener("click",function(e){if(e.target===lb||e.target===cp)hide()});
+  document.addEventListener("keydown",function(e){if(!lb.classList.contains("on"))return;if(e.key==="Escape")hide();if(e.key==="ArrowLeft")show(i-1);if(e.key==="ArrowRight")show(i+1)});
+})();
+</script>
 <script>
 (function(){
   var KEY="shanhai-lang", body=document.body;
